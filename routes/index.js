@@ -10,7 +10,7 @@ const querystring = require('querystring');
 
 /* GET users listing. */
 router.get('/', function(req, res) {
-  //res.render('index');
+  res.render('login');
 });
 
 router.get('/login', function(req, res, next) {
