@@ -1,0 +1,19 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Image": {
+    "Name": "kill5038/newer_news:latest",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "3000"
+    }
+  ],
+  "Volumes": [
+    {
+      "HostDirectory": "/var/run",
+      "ContainerDirectory": "/run-data"
+    }
+  ],
+  "Logging": "/var/log/nginx"
+}
